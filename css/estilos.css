@@ -2,74 +2,131 @@
   box-sizing: border-box;
 }
 
-.titulo{
- align-items: flex-start;}
-
-body{
-	font-style:oblique;
-}
-*atencion aca diseño adapt porque dancing script
-pueda tener que anclarse o crearse* como archivo**
-
-#contenido{
-  align-items: center;
+img {
+  shadow: 2px #02010a
 }
 
-header{
-	background: #5b7989
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-article{
-  	float:left;
-  	height: 100%;
-  	background
-  	padding: 2%;
-  	text-align: center;
-  	height: 400px;
-  }
-
-#imagencentral
-  {
-  background-color: #82c3a6;
-  width: 100%;
+/* Style the header */
+.header {
+  overflow: hidden; /* importada de https://www.w3schools.com/howto/howto_css_responsive_header.asp*/
+  border-radius: 10px 10px 0 0;
+  background-color: #5b7989;
+  padding:; /* no estoy seguro   ESTABA EN 30*/
+  text-align:;
+  text-shadow: 2px;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-#imagensecund1
-  {
-  background-color: #d5c75f;
+.header h1 {
+  float: left;
+}
+
+.header a {
+  float: right;
+  color: white;
+}
+
+.header li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.imagencentral {
+  border:;
+  margin:;
+  padding:;
+}
+
+#imagencentral img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
+  border:;
+  margin:;
+  padding:50px;
+
+}
+
+
+.imagensecundaria{
+  border: 0px;
+}
+
+
+/* Container for flexboxes---equivale a FILA .row */
+.imagensec-row {
+  border: 1px;
+  background-color: #d5c75f;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction:;
+  text-align: center;
+}
+
+.imagensec-row img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+  padding:50px;
+}
+
+imagensec-row p{
+  align: center;
+  text-align: center;
+}
+
+
+/* Create two equal columns that sit next to each other---- COLUMNAS*/
+ .imagensec-column {
+  -webkit-flex: 10;
+  -ms-flex: 10;
+  flex: 10;
+  padding: 10px;
+  height: 300px;   /* Should be removed. Only for demonstration */
+
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #c6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
+  text-align:;
+}
+
+.footer-row {    /* la FILA del FOOTER */
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+.footer-column {
+  -webkit-flex: 10;
+  -ms-flex: 10;
+  flex: 10;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  display: block;
+  list-style-type: none;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
   }
-
-#imagensecund2
-    {
-    background-color: #d5c75f;
-    width: 50%;
-    }
-
-
-img{
-  width: 70%;
-  height: 30%;
-}
-
-.wrapper{
-  display: flex;
-  flex-direction: column;
-}
-
-footer{
-  background-color: #C6d5c5;
-}
-
-.contenedor{
-  display: flex;
-  flex-direction: column;
-  background-color: #C6d5c5;
-}
-
-
-***** atencion intentar este llamado #titulo #menu  ***
-
-
-
-***** por acá va   text-shadow: 2px #02010a *****
