@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+.titulo{
+ align-items: flex-start;}
+
+body{
+	font-style:oblique;
+}
+*atencion aca diseño adapt porque dancing script
+pueda tener que anclarse o crearse* como archivo**
+
+#contenido{
+  align-items: center;
+}
+
+header{
+	background: #5b7989
+}
+
+article{
+  	float:left;
+  	height: 100%;
+  	background
+  	padding: 2%;
+  	text-align: center;
+  	height: 400px;
+  }
+
+#imagencentral
+  {
+  background-color: #82c3a6;
+  width: 100%;
+}
+
+#imagensecund1
+  {
+  background-color: #d5c75f;
+  width: 50%;
+  }
+
+#imagensecund2
+    {
+    background-color: #d5c75f;
+    width: 50%;
+    }
+
+
+img{
+  width: 70%;
+  height: 30%;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  background-color: #C6d5c5;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  background-color: #C6d5c5;
+}
+
+
+***** atencion intentar este llamado #titulo #menu  ***
+
+
+
+***** por acá va   text-shadow: 2px #02010a *****
