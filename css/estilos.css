@@ -1,13 +1,18 @@
+/* recordar font-size vw
+Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm. */
+
 * {
   box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
 }
 
-img {
+*img {
   shadow: 2px #02010a
 }
 
+/* creo este body  font-familiy NO lo lee ni haya que ponerlo */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Dancing Script', cursive;
 }
 
 /* Style the header */
@@ -40,9 +45,8 @@ body {
   text-decoration: none;
 }
 
-
-
 .imagencentral {
+  background-color:#82c3a6;
   border:;
   margin:;
   padding:;
@@ -55,8 +59,8 @@ body {
   width: 50%;
   border:;
   margin:;
-  padding:50px;
-
+  padding:10px;
+  height: 25%;
 }
 
 
@@ -79,8 +83,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 33%;
-  padding:50px;
+  width: 35%;
+  padding:5px;
 }
 
 imagensec-row p{
@@ -96,7 +100,6 @@ imagensec-row p{
   flex: 10;
   padding: 10px;
   height: 300px;   /* Should be removed. Only for demonstration */
-
 }
 
 
