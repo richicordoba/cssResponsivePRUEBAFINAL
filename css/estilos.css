@@ -3,15 +3,19 @@ Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport
 
 * {
   box-sizing: border-box;
-  font-family: 'Dancing Script', cursive;
 }
 
 *img {
-  shadow: 2px #02010a
+  shadow: 2px #02010a;
+}
+
+.contenido {
+  align-content: center;
 }
 
 /* creo este body  font-familiy NO lo lee ni haya que ponerlo */
 body {
+  background-color: #02010a;
   font-family:'Dancing Script', cursive;
 }
 
@@ -63,6 +67,17 @@ body {
   height: 25%;
 }
 
+#imagencentral img {
+-webkit-transition: -webkit-transform .8s ease-in-out;
+        transition:         transform .8s ease-in-out;
+}
+
+/*FALTA LA SOMBRA #82c3a6 Y , este estilo ta app a la imagen centra y debe ir a paisajes, la secund IZQ */
+#imagencentral img:hover {
+-webkit-transform:rotate(10deg);
+        transform:rotate(10deg);
+        border: 2px;
+}
 
 .imagensecundaria{
   border: 0px;
@@ -126,6 +141,17 @@ imagensec-row p{
   display: block;
   list-style-type: none;
 }
+
+/*Considerac Generales 4. y 5.  */
+@media (max-width: 900px) {
+  .contenido {
+  width: 100%;
+  }
+
+  @media (  min-width: 900px) {
+    .contenido {
+  max-width: 900px
+    }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
