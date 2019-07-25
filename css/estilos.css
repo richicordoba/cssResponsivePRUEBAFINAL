@@ -54,17 +54,25 @@ body {
 }
 
 .header li a {
-  display: block;
+  display: inline;/* aca pueda ser block*/
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration:;
 }
 
 
+.currentlink a {
+  text-decoration: none;
+}
 
-@media screen and (max-width: 300px) {
- .header h1{}
- .header a{}
+@media screen and (max-width: 320px) {
+ .header h1{
+   float: none;
+ }
+ .header a{
+   float: none;
+   display: inline;
+ }
 }
 
 .imagencentral {
@@ -72,8 +80,9 @@ body {
   border:;
   margin-left: 10%;
   margin-right: 10%;
-  margin
-  padding:;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: auto;
   height:;
 }
 
@@ -88,23 +97,18 @@ body {
   height: 25%;
 }
 
-#imagencentral img {
--webkit-transition: -webkit-transform .8s ease-in-out;
-        transition:         transform .8s ease-in-out;
-}
-
-/*FALTA LA SOMBRA #82c3a6 Y , este estilo ta app a la imagen centra y debe ir a paisajes, la secund IZQ */
-#imagencentral img:hover {
--webkit-transform:rotate(10deg);
-        transform:rotate(10deg);
-        border: 2px;
-}
-
 .imagensecundaria{
   border: 0px;
   height: 20%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+
+
+imagensec-row p {
+  align: center;
+  text-align: center;
 }
 
 
@@ -126,19 +130,26 @@ body {
   padding:5px;
 }
 
-imagensec-row p{
-  align: center;
-  text-align: center;
+ .imagensec-column1 img {
+
 }
 
+/*FALTA LA SOMBRA #82c3a6 Y , este estilo ta app a la imagen centra y debe ir a paisajes, la secund IZQ */
+.imagensec-column1 img:hover {
+-webkit-transform:rotate(10deg);
+        transform:rotate(10deg);
+        border: 2px;
+}
 
-/* Create two equal columns that sit next to each other---- COLUMNAS*/
- .imagensec-column {
-  -webkit-flex: 10;
-  -ms-flex: 10;
-  flex: 10;
-  padding: 10px;
-  height: 300px;   /* Should be removed. Only for demonstration */
+.imagensec-column2 img {
+
+}
+
+/*FALTA LA SOMBRA #82c3a6 Y , este estilo ta app a la imagen centra y debe ir a paisajes, la secund IZQ */
+.imagensec-column2 img:hover {
+-webkit-transform:translate(5px);
+       transform:();
+       border: 2px;
 }
 
 
